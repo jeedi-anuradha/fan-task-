@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    background-color:whitesmoke;
+}
+.button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #666;
+    color:#ffff;
+}
+
+.fan{
+    /* display: block; */
+    position: absolute;
+    right:20%;
+    top:25%;
+    transition: transform 2s;
+    /* color: blue; */
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: white;
+}
+.one:hover~.fan{
+        transform: rotate(360deg);
+        transition: transform 8s;
+}
+.two:hover~.fan{
+    transform: rotate(1000deg);
+    transition: transform 5s;
+}
+.three:hover~.fan{
+    transform: rotate(1500deg);
+    transition: transform 3s;
+}
+.four:hover~.fan{
+    transform: rotate(2000deg);
+    transition: transform 1s;
+}
